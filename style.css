@@ -145,4 +145,83 @@ a {
     display: flex;
     gap: 21px;
 }
+/* สำหรับอุปกรณ์ที่มีความกว้างไม่เกิน 768px (เช่น แท็บเล็ต) */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .header-image {
+        width: 150px; /* ปรับขนาดภาพให้เล็กลง */
+        margin: 10px 0;
+    }
+
+    .comsci-text {
+        font-size: 30px; /* ขนาดตัวอักษรเล็กลง */
+        position: relative; /* ปรับตำแหน่งให้เหมาะสม */
+        left: auto;
+        transform: none;
+    }
+
+    .btn {
+        font-size: 18px; /* ปรับขนาดตัวอักษรในปุ่ม */
+        margin-top: 40px; /* ลดระยะห่างด้านบนของปุ่ม */
+    }
+
+    .container {
+        flex-direction: column; /* จัดเรียงภาพในแนวตั้ง */
+        gap: 20px; /* ปรับระยะห่างระหว่างภาพ */
+    }
+
+    .image-text {
+        width: 100%; /* ทำให้ความกว้างเต็มขนาดหน้าจอ */
+        margin: 0; /* ลบระยะห่างที่ไม่จำเป็น */
+    }
+
+    .btn-link, .btn-link1 {
+        width: 100%; /* ทำให้ปุ่มเต็มความกว้าง */
+        height: auto; /* ปรับความสูงอัตโนมัติ */
+    }
+}
+
+/* สำหรับอุปกรณ์ที่มีความกว้างไม่เกิน 480px (เช่น สมาร์ตโฟน) */
+@media (max-width: 480px) {
+    .header-container {
+        padding: 5px; /* ลดพื้นที่ padding */
+    }
+
+    .header-image {
+        width: 100px; /* ขนาดภาพที่เล็กลง */
+    }
+
+    .comsci-text {
+        font-size: 24px; /* ขนาดตัวอักษรเล็กลง */
+    }
+
+    .btn {
+        font-size: 16px; /* ขนาดตัวอักษรในปุ่ม */
+        margin-top: 20px; /* ลดระยะห่างด้านบนของปุ่ม */
+    }
+
+    .container {
+        padding-top: 10px; /* ลดระยะห่างด้านบนของ container */
+    }
+
+    .image-text {
+        width: 100%; /* ทำให้ความกว้างเต็มขนาดหน้าจอ */
+    }
+
+    img {
+        width: 100%; /* ทำให้ภาพเต็มความกว้าง */
+        height: auto; /* ปรับความสูงอัตโนมัติ */
+    }
+
+    .btn-link, .btn-link1 {
+        width: 100%; /* ทำให้ปุ่มเต็มความกว้าง */
+        height: auto; /* ปรับความสูงอัตโนมัติ */
+    }
+}
+
 }
