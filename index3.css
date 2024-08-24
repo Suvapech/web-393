@@ -2,130 +2,142 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center; /* จัดให้อยู่กลางหน้าแนวนอน */
-    flex-direction: column; /* เรียงลูกในแนวตั้ง */
-    font-family: 'Itim', sans-serif; /* Font style */
-    background: linear-gradient(to bottom right, #ffdee9, #b5fffc, #ffefb7); /* ไล่เฉดสีพร้อมภาพพื้นหลัง */
+    justify-content: center; /* Center horizontally */
+    flex-direction: column; /* Stack children vertically */
+    font-family: 'Itim', sans-serif;
+    background: linear-gradient(to bottom right, #ffdee9, #b5fffc, #ffefb7);
+}
+
 .header-container {
-        display: flex; /* ใช้ Flexbox */
-        align-items: center; /* จัดกลางในแนวตั้ง */
-        justify-content: space-between; /* จัดให้มีพื้นที่ว่างระหว่างองค์ประกอบ */
-        border-bottom: 5px solid #000; /* เส้นใต้ที่ยาวถึงข้อความ */
-        padding: 10px 20px; /* เพิ่มระยะห่างรอบๆ */
-        background: url(https://img.lovepik.com/photo/50048/1898.jpg_wh860.jpg); /* สีพื้นหลังของส่วนหัวเป็นสีเขียว */
-        color: white; /* สีตัวหนังสือให้ตัดกับพื้นหลัง */
-        position: relative; /* ใช้สำหรับการจัดตำแหน่งแบบ absolute */
-    }
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 5px solid #000;
+    padding: 10px 20px;
+    background: url(https://img.lovepik.com/photo/50048/1898.jpg_wh860.jpg);
+    color: white;
+    position: relative;
+}
+
 .header-image {
-    width: 200px; /* กำหนดความกว้างของภาพแนวยาว */
-    height: auto; /* กำหนดความสูงของภาพ */
-    object-fit: cover; /* ให้ภาพเติมเต็มพื้นที่โดยรักษาอัตราส่วน */
-    margin: 10px 50px 20px 5px; /* เว้นระยะห่างระหว่างภาพและข้อความ */
-    float: left; /* ทำให้ภาพชิดซ้าย */
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+    margin: 10px 50px 20px 5px;
 }
+
 .comsci-text {
-    font-size: 50px;  /* ขนาดตัวอักษร */
-    color: #ffffff;   /* กำหนดสีพาสเทลที่นี่ */
-    font-weight: bold;  /* ตัวอักษรหนา */
-    position: absolute;  /* ใช้สำหรับการจัดตำแหน่ง */
-    left: 50%;  /* จัดกลางแนวนอน */
-    transform: translateX(-50%);  /* จัดกลางตามแนวนอน */
+    font-size: 50px;
+    color: #ffffff;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
+
 .btn {
-    margin-top: 80px; /* ขยับปุ่มลงจากภาพ 80px */
+    margin-top: 80px;
     background-color: rgb(119, 190, 252);
     font-weight: bold;
-    margin-right: 20px; /* เพิ่มระยะห่าง 20px ระหว่างปุ่ม */
+    margin-right: 20px;
     font-size: 20px;
 }
+
 .btn:hover {
-    background-color: rgb(100, 160, 235); /* เปลี่ยนสีพื้นหลังเมื่อวางเมาส์บนปุ่ม */
+    background-color: rgb(100, 160, 235);
 }
+
 h2 {
-    font-size: 24px; /* ขนาดฟอนต์ */
+    font-size: 24px;
     color: #000;
     font-weight: bold;
-    text-align: left; /* จัดตำแหน่งตัวหนังสือให้ชิดซ้าย */
-    margin: 25px; /* เว้นระยะห่างระหว่างภาพและข้อความ */
+    text-align: left;
+    margin: 25px;
 }
+
 .container {
     display: flex;
-    flex-wrap: wrap; /* อนุญาตให้รูปภาพข้ามบรรทัด */
-    justify-content: left; /* จัดให้ชิดซ้ายแนวนอน */
+    flex-wrap: wrap;
+    justify-content: left;
 }
+
 .image-text {
     display: flex;
     align-items: center;
 }
+
 .image-text img {
     width: 300px;
     height: auto;
-    justify-content: left; /* จัดให้ชิดซ้ายแนวนอน */
     object-fit: cover;
     border-radius: 8px;
-    
 }
-h1{
+
+h1 {
     padding-top: 10px;
-    text-align: left; /* Align headings to the left */
+    text-align: left;
     text-decoration: underline;
     font-size: 35px;
     font-weight: bold;
-    margin-left: 50px; /* Remove margin from the left */
+    margin-left: 50px;
 }
+
 .activity-images img {
-    width: 400px; /* Image width */
-    height: auto; /* Image height */
-    border-radius: 10px; /* Rounded corners */
-    margin: 10px 50px 20px 50px; /* Margin between images, space on the right */
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px 50px 20px 50px;
 }
-/* สำหรับอุปกรณ์ที่มีความกว้างสูงสุด 600px */
-@media (max-width: 600px) {
+
+/* Mobile styles */
+@media (max-width: 768px) {
     .header-container {
-        flex-direction: column; /* เรียงองค์ประกอบในแนวตั้ง */
-        text-align: center; /* จัดข้อความให้กลาง */
-        padding: 10px; /* ลดระยะห่างรอบๆ */
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        text-align: center; /* Center text */
     }
 
     .header-image {
-        width: 150px; /* ลดขนาดของภาพ */
-        margin: 10px 0; /* ปรับระยะห่าง */
-        float: none; /* ยกเลิกการลอยของภาพ */
+        width: 150px; /* Adjust image size for mobile */
+        margin: 10px 0;
     }
 
     .comsci-text {
-        font-size: 30px; /* ลดขนาดตัวอักษร */
-        position: static; /* ยกเลิกตำแหน่ง absolute */
-        transform: none; /* ยกเลิกการเปลี่ยนแปลงตำแหน่ง */
-        margin-top: 10px; /* เพิ่มระยะห่างด้านบน */
+        font-size: 30px; /* Adjust font size for mobile */
+        position: static; /* Remove absolute positioning */
+        margin-top: 10px;
     }
 
     .btn {
-        font-size: 16px; /* ลดขนาดตัวอักษร */
-        margin-top: 20px; /* ลดระยะห่างจากด้านบน */
-        margin-right: 10px; /* ลดระยะห่างระหว่างปุ่ม */
-    }
-
-    .container {
-        flex-direction: column; /* เรียงรูปภาพในแนวตั้ง */
-        align-items: center; /* จัดกลางแนวนอน */
-    }
-
-    .image-text img {
-        width: 100%; /* ปรับให้ภาพเต็มความกว้างของ container */
-        height: auto; /* รักษาสัดส่วนของภาพ */
+        margin-top: 20px; /* Adjust margin for mobile */
+        font-size: 16px;
     }
 
     h1 {
-        font-size: 28px; /* ลดขนาดตัวอักษร */
-        margin-left: 0; /* ลบระยะห่างด้านซ้าย */
-        text-align: center; /* จัดกลางข้อความ */
+        font-size: 28px; /* Adjust font size for mobile */
+        margin-left: 0; /* Remove left margin */
+    }
+
+    .container {
+        justify-content: center; /* Center items horizontally */
+    }
+
+    .image-text img {
+        width: 100%; /* Make images responsive */
+        height: auto;
     }
 
     .activity-images img {
-        width: 100%; /* ปรับให้ภาพเต็มความกว้างของ container */
-        height: auto; /* รักษาสัดส่วนของภาพ */
-        margin: 10px 0; /* ปรับระยะห่าง */
+        width: 100%; /* Make images responsive */
+        margin: 10px 0; /* Adjust margin for mobile */
     }
 }
+
+@media (max-width: 480px) {
+    .btn {
+        font-size: 14px; /* Further adjust button font size for very small screens */
+    }
+
+    h1, h2 {
+        font-size: 20px; /* Adjust font size for very small screens */
+    }
 }
