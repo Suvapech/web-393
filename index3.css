@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* จัดให้อยู่กลางหน้าแนวนอน */
+    flex-direction: column; /* เรียงลูกในแนวตั้ง */
+    font-family: 'Itim', sans-serif; /* Font style */
+    background: linear-gradient(to bottom right, #ffdee9, #b5fffc, #ffefb7); /* ไล่เฉดสีพร้อมภาพพื้นหลัง */
+.header-container {
+        display: flex; /* ใช้ Flexbox */
+        align-items: center; /* จัดกลางในแนวตั้ง */
+        justify-content: space-between; /* จัดให้มีพื้นที่ว่างระหว่างองค์ประกอบ */
+        border-bottom: 5px solid #000; /* เส้นใต้ที่ยาวถึงข้อความ */
+        padding: 10px 20px; /* เพิ่มระยะห่างรอบๆ */
+        background: url(https://img.lovepik.com/photo/50048/1898.jpg_wh860.jpg); /* สีพื้นหลังของส่วนหัวเป็นสีเขียว */
+        color: white; /* สีตัวหนังสือให้ตัดกับพื้นหลัง */
+        position: relative; /* ใช้สำหรับการจัดตำแหน่งแบบ absolute */
+    }
+.header-image {
+    width: 200px; /* กำหนดความกว้างของภาพแนวยาว */
+    height: auto; /* กำหนดความสูงของภาพ */
+    object-fit: cover; /* ให้ภาพเติมเต็มพื้นที่โดยรักษาอัตราส่วน */
+    margin: 10px 50px 20px 5px; /* เว้นระยะห่างระหว่างภาพและข้อความ */
+    float: left; /* ทำให้ภาพชิดซ้าย */
+}
+.comsci-text {
+    font-size: 50px;  /* ขนาดตัวอักษร */
+    color: #ffffff;   /* กำหนดสีพาสเทลที่นี่ */
+    font-weight: bold;  /* ตัวอักษรหนา */
+    position: absolute;  /* ใช้สำหรับการจัดตำแหน่ง */
+    left: 50%;  /* จัดกลางแนวนอน */
+    transform: translateX(-50%);  /* จัดกลางตามแนวนอน */
+}
+.btn {
+    margin-top: 80px; /* ขยับปุ่มลงจากภาพ 80px */
+    background-color: rgb(119, 190, 252);
+    font-weight: bold;
+    margin-right: 20px; /* เพิ่มระยะห่าง 20px ระหว่างปุ่ม */
+    font-size: 20px;
+}
+.btn:hover {
+    background-color: rgb(100, 160, 235); /* เปลี่ยนสีพื้นหลังเมื่อวางเมาส์บนปุ่ม */
+}
+h2 {
+    font-size: 24px; /* ขนาดฟอนต์ */
+    color: #000;
+    font-weight: bold;
+    text-align: left; /* จัดตำแหน่งตัวหนังสือให้ชิดซ้าย */
+    margin: 25px; /* เว้นระยะห่างระหว่างภาพและข้อความ */
+}
+.container {
+    display: flex;
+    flex-wrap: wrap; /* อนุญาตให้รูปภาพข้ามบรรทัด */
+    justify-content: left; /* จัดให้ชิดซ้ายแนวนอน */
+}
+.image-text {
+    display: flex;
+    align-items: center;
+}
+.image-text img {
+    width: 300px;
+    height: auto;
+    justify-content: left; /* จัดให้ชิดซ้ายแนวนอน */
+    object-fit: cover;
+    border-radius: 8px;
+    
+}
+h1{
+    padding-top: 10px;
+    text-align: left; /* Align headings to the left */
+    text-decoration: underline;
+    font-size: 35px;
+    font-weight: bold;
+    margin-left: 50px; /* Remove margin from the left */
+}
+.activity-images img {
+    width: 400px; /* Image width */
+    height: auto; /* Image height */
+    border-radius: 10px; /* Rounded corners */
+    margin: 10px 50px 20px 50px; /* Margin between images, space on the right */
+}
+}

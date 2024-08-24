@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* จัดให้อยู่กลางหน้าแนวนอน */
+    flex-direction: column; /* เรียงลูกในแนวตั้ง */
+    font-family: 'Itim', sans-serif; /* Font style */
+    background: linear-gradient(to bottom right, #ffdee9, #b5fffc, #ffefb7); /* ไล่เฉดสีพร้อมภาพพื้นหลัง */
+.header-container {
+        display: flex; /* ใช้ Flexbox */
+        align-items: center; /* จัดกลางในแนวตั้ง */
+        justify-content: space-between; /* จัดให้มีพื้นที่ว่างระหว่างองค์ประกอบ */
+        border-bottom: 5px solid #000; /* เส้นใต้ที่ยาวถึงข้อความ */
+        padding: 10px 20px; /* เพิ่มระยะห่างรอบๆ */
+        background: url(https://img.lovepik.com/photo/50048/1898.jpg_wh860.jpg); /* สีพื้นหลังของส่วนหัวเป็นสีเขียว */
+        color: white; /* สีตัวหนังสือให้ตัดกับพื้นหลัง */
+        position: relative; /* ใช้สำหรับการจัดตำแหน่งแบบ absolute */
+    }
+.header-image {
+    width: 200px; /* กำหนดความกว้างของภาพแนวยาว */
+    height: auto; /* กำหนดความสูงของภาพ */
+    object-fit: cover; /* ให้ภาพเติมเต็มพื้นที่โดยรักษาอัตราส่วน */
+    margin: 10px 50px 20px 5px; /* เว้นระยะห่างระหว่างภาพและข้อความ */
+    float: left; /* ทำให้ภาพชิดซ้าย */
+}
+.comsci-text {
+    font-size: 50px;  /* ขนาดตัวอักษร */
+    color: #ffffff;   /* กำหนดสีพาสเทลที่นี่ */
+    font-weight: bold;  /* ตัวอักษรหนา */
+    position: absolute;  /* ใช้สำหรับการจัดตำแหน่ง */
+    left: 50%;  /* จัดกลางแนวนอน */
+    transform: translateX(-50%);  /* จัดกลางตามแนวนอน */
+}
+.btn {
+    margin-top: 80px; /* ขยับปุ่มลงจากภาพ 80px */
+    background-color: rgb(119, 190, 252);
+    font-weight: bold;
+    margin-right: 20px; /* เพิ่มระยะห่าง 20px ระหว่างปุ่ม */
+    font-size: 20px;
+}
+.btn:hover {
+    background-color: rgb(100, 160, 235); /* เปลี่ยนสีพื้นหลังเมื่อวางเมาส์บนปุ่ม */
+}
+
+h1 {
+    font-size: 40px; /* ขนาดฟอนต์ */
+    text-align: center; /* จัดตำแหน่งตัวหนังสือให้อยู่กลาง */
+    margin-top: 19px;
+}
+
+.container {
+    padding-top: 25px; /* กำหนดระยะห่างจากขอบ */
+    display: flex;
+    flex-wrap: wrap; /* อนุญาตให้รูปภาพข้ามบรรทัด */
+    gap: 20px 90px; /* ระยะห่างระหว่างรูปภาพ */
+    justify-content: center; /* จัดให้อยู่กลางแนวนอน */
+}
+.image-text {
+    display: flex; /* ใช้ flexbox ในการจัดเรียงรูปและข้อความในบรรทัดเดียวกัน */
+    flex-direction: column; /* จัดเรียงรูปในแนวตั้ง */
+    align-items: center; /* จัดให้อยู่กลางหน้าแนวตั้ง */            
+    width: 200px; /* กำหนดความกว้างของกล่องรูปและข้อความ */
+}
+img {
+    width: 250px; /* กำหนดความกว้างของภาพ */
+    height: 200px; /* กำหนดความสูงของภาพ */
+    object-fit: cover; /* ให้ภาพเติมเต็มพื้นที่โดยรักษาอัตราส่วน */
+    border-radius: 8px; /* เพิ่มมุมโค้งมน */
+}
+
+.image1 {
+    width: auto; /* กำหนดความกว้างของภาพแนวยาว */
+    height: 200px; /* กำหนดความสูงของภาพ */
+    object-fit: cover; /* ให้ภาพเติมเต็มพื้นที่โดยรักษาอัตราส่วน */
+    margin: 20px 50px 20px 20px; /* เว้นระยะห่างระหว่างภาพและข้อความ */
+    float: left; /* ทำให้ภาพชิดซ้าย */
+}
+
+h2 {
+    font-size: 24px; /* ตั้งค่าขนาดฟอนต์เป็น 18px */
+    font-weight: bold;
+    margin-top: 10px; /* เพิ่มระยะห่างระหว่างรูปภาพและข้อความ */
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.btn-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: inherit; /* ใช้สีตัวอักษรจากแม่แบบ */
+    border: 2px solid #f4f4f4;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-link img {
+    width: 200px; /* กำหนดความกว้างของภาพ */
+    height: 200px; /* กำหนดความสูงของภาพ */
+    object-fit: cover; /* ให้ภาพเติมเต็มพื้นที่โดยรักษาอัตราส่วน */
+    border-radius: 8px; /* เพิ่มมุมโค้งมน */
+}
+
+.btn-link1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    border: 2px solid #bedfff;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 350px;
+    height: 350px;
+    margin: auto; /* ทำให้ปุ่มอยู่ตรงกลางของ container */
+}
+
+.btn-link1:hover {
+    transform: scale(1.05); /* ขยายขนาดเล็กน้อยเมื่อเม้าส์ชี้ */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* เพิ่มเงาเมื่อเม้าส์ชี้ */
+}
+
+.btn-link h2 {
+    margin: 0;
+    padding: 10px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 24px;
+    width: 100%;
+}
+
+.btn-link:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.btn-container {
+    display: flex;
+    gap: 21px;
+}
+}
