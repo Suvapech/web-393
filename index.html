@@ -7,180 +7,332 @@
     <!-- เชื่อมต่อกับ Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Itim:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="header-container">
-        <img fetchpriority="high" src="https://www.cs.mju.ac.th/assets/logo.aa2240c2.png" class="header-image">    
-        <span class="comsci-text">COMSCI YEARBOOK</span>
-        <div class="btn-container">
+    <div class="header-container d-flex align-items-center justify-content-between p-3 bg-dark">
+        <img src="https://www.cs.mju.ac.th/assets/logo.aa2240c2.png" class="header-image img-fluid" style="max-width: 150px;">    
+        <span class="comsci-text fs-3 text-white fw-bold">COMSCI YEARBOOK</span>
+        <div class="btn-container d-flex gap-2">
             <!-- ใช้แท็ก <a> เพื่อให้สามารถคลิกลิงก์กลับหน้าแรก -->
-            <a href="index.html" class="btn">Home</a> <!-- แก้ href เป็นลิงก์ของหน้าแรก -->
-            <button class="btn">Q&A</button>
-            <button class="btn">Download</button>
+            <a href="index.html" class="btn btn-primary">Home</a> <!-- แก้ href เป็นลิงก์ของหน้าแรก -->
+            <button class="btn btn-primary">Q&A</button>
+            <button class="btn btn-primary">Download</button>
             <!-- ใช้ JavaScript เพื่อทำให้ปุ่มนี้ทำงานเป็นปุ่มย้อนกลับ -->
-            <button type="button" class="btn">Back</button>
+            <button type="button" class="btn btn-primary">Back</button>
         </div>
     </div>
+    <div class="text-center my-4">
         <h1>ทำเนียบรุ่น <br> COMPUTER SCIENCE</h1>
-        <div class="container">
-            <div class="image-text">
-                <!-- ใช้ Bootstrap คลาสเพื่อสร้างลิงก์ -->
-                <a href="index2.html" class="btn-link">
-                    <img src="https://wallpapercrafter.com/desktop6/1617212-retriever-puppy-snout-grass-dog-pets-animal.jpg" alt="Retriever Puppy">
-                    <h2>COMSCI รุ่นที่ 1</h2>
+    </div>
+    <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+            <!-- Each item in the grid -->
+            <div class="col">
+                <a href="index2.html" class="btn-link text-decoration-none">
+                    <div class="card h-100">
+                        <img src="https://wallpapercrafter.com/desktop6/1617212-retriever-puppy-snout-grass-dog-pets-animal.jpg" class="card-img-top" alt="Retriever Puppy">
+                        <div class="card-body text-center">
+                            <h2 class="card-title fs-5 fw-bold">COMSCI รุ่นที่ 1</h2>
+                        </div>
+                    </div>
                 </a>
             </div>
-            <div class="image-text">
-                <a href="index2.html" class="btn-link">
-                    <img src="https://cdn-prod.medicalnewstoday.com/content/images/articles/322/322868/golden-retriever-puppy.jpg">
-                    <h2>COMSCI รุ่นที่ 2</h2></a>
+            <div class="col">
+                <a href="index2.html" class="btn-link text-decoration-none">
+                    <div class="card h-100">
+                        <img src="https://cdn-prod.medicalnewstoday.com/content/images/articles/322/322868/golden-retriever-puppy.jpg" class="card-img-top" alt="Golden Retriever Puppy">
+                        <div class="card-body text-center">
+                            <h2 class="card-title fs-5 fw-bold">COMSCI รุ่นที่ 2</h2>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <div class="image-text">
-                <a href="index2.html" class="btn-link">
-                <img src="https://images.pexels.com/photos/3828097/pexels-photo-3828097.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
-                <h2>COMSCI รุ่นที่ 3</h2></a>
+            <div class="col">
+                <a href="index2.html" class="btn-link text-decoration-none">
+                    <div class="card h-100">
+                        <img src="https://images.pexels.com/photos/3828097/pexels-photo-3828097.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="Dog Image">
+                        <div class="card-body text-center">
+                            <h2 class="card-title fs-5 fw-bold">COMSCI รุ่นที่ 3</h2>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <div class="image-text">
-                <a href="index2.html" class="btn-link">
-                <img src="https://f.ptcdn.info/002/048/000/oidav7m4nF0JGvXz44Y-o.jpg">
-                <h2>COMSCI รุ่นที่ 4</h2></a>
+            <div class="col">
+                <a href="index2.html" class="btn-link text-decoration-none">
+                    <div class="card h-100">
+                        <img src="https://f.ptcdn.info/002/048/000/oidav7m4nF0JGvXz44Y-o.jpg" class="card-img-top" alt="Dog Image">
+                        <div class="card-body text-center">
+                            <h2 class="card-title fs-5 fw-bold">COMSCI รุ่นที่ 4</h2>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <div class="image-text">
-                <a href="index2.html" class="btn-link">
-                <img src="https://chiangmai.zoothailand.org/images/gallery/g20200515094354_g.jpg">
-                <h2>COMSCI รุ่นที่ 5</h2></a>
+            <div class="col">
+                <a href="index2.html" class="btn-link text-decoration-none">
+                    <div class="card h-100">
+                        <img src="https://chiangmai.zoothailand.org/images/gallery/g20200515094354_g.jpg" class="card-img-top" alt="Zoo Image">
+                        <div class="card-body text-center">
+                            <h2 class="card-title fs-5 fw-bold">COMSCI รุ่นที่ 5</h2>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <div class="image-text">
-                <a href="index2.html" class="btn-link">
-                <img src="https://image.posttoday.com/uploads/images/contents/w1024/2022/10/FgjhG4ARbGs0fAXqwdrO.webp?x-image-process=style/lg-webp">
-                <h2>COMSCI รุ่นที่ 6</h2></a>
+            <div class="col">
+                <a href="index2.html" class="btn-link text-decoration-none">
+                    <div class="card h-100">
+                        <img src="https://image.posttoday.com/uploads/images/contents/w1024/2022/10/FgjhG4ARbGs0fAXqwdrO.webp?x-image-process=style/lg-webp" class="card-img-top" alt="Image">
+                        <div class="card-body text-center">
+                            <h2 class="card-title fs-5 fw-bold">COMSCI รุ่นที่ 6</h2>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <div class="image-text">
-                <a href="index2.html" class="btn-link">
-                <img src="https://sistacafe.com/_next/image?url=https%3A%2F%2Fsistacafe-assets.sgp1.cdn.digitaloceanspaces.com%2Fc%2F2879%2Fthumbnail.jpeg%3Fv%3D20240305191531&w=1080&q=75">
-                <h2>COMSCI รุ่นที่ 7</h2></a>
+            <div class="col">
+                <a href="index2.html" class="btn-link text-decoration-none">
+                    <div class="card h-100">
+                        <img src="https://sistacafe.com/_next/image?url=https%3A%2F%2Fsistacafe-assets.sgp1.cdn.digitaloceanspaces.com%2Fc%2F2879%2Fthumbnail.jpeg%3Fv%3D20240305191531&w=1080&q=75" class="card-img-top" alt="Image">
+                        <div class="card-body text-center">
+                            <h2 class="card-title fs-5 fw-bold">COMSCI รุ่นที่ 7</h2>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <div class="image-text">
-                <a href="index2.html" class="btn-link">
-                <img src="https://www.matichon.co.th/wp-content/uploads/2023/10/%E0%B8%AA%E0%B8%B4%E0%B8%87-%E0%B9%80%E0%B8%A7%E0%B9%87%E0%B8%9A.jpg">
-                <h2>COMSCI รุ่นที่ 8</h2></a>
+            <div class="col">
+                <a href="index2.html" class="btn-link text-decoration-none">
+                    <div class="card h-100">
+                        <img src="https://www.matichon.co.th/wp-content/uploads/2023/10/%E0%B8%AA%E0%B8%B4%E0%B8%87-%E0%B9%80%E0%B8%A7%E0%B9%87%E0%B8%9A.jpg" class="card-img-top" alt="Image">
+                        <div class="card-body text-center">
+                            <h2 class="card-title fs-5 fw-bold">COMSCI รุ่นที่ 8</h2>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <div class="image-text">
-                <a href="index2.html" class="btn-link">
-                <img src="https://www.seub.or.th/seubweb/wp-content/uploads/2024/01/33.jpg">
-                <h2>COMSCI รุ่นที่ 9</h2></a>
+            <div class="col">
+                <a href="index2.html" class="btn-link text-decoration-none">
+                    <div class="card h-100">
+                        <img src="https://www.seub.or.th/seubweb/wp-content/uploads/2024/01/33.jpg" class="card-img-top" alt="Image">
+                        <div class="card-body text-center">
+                            <h2 class="card-title fs-5 fw-bold">COMSCI รุ่นที่ 9</h2>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <div class="image-text">
-                <a href="index2.html" class="btn-link">
-                <img src="https://cdn.pixabay.com/photo/2023/03/28/09/28/cat-7882701_640.jpg">
-                <h2>COMSCI รุ่นที่ 10</h2></a>
+            <div class="col">
+                <a href="index2.html" class="btn-link text-decoration-none">
+                    <div class="card h-100">
+                        <img src="https://cdn.pixabay.com/photo/2023/03/28/09/28/cat-7882701_640.jpg" class="card-img-top" alt="Cat Image">
+                        <div class="card-body text-center">
+                            <h2 class="card-title fs-5 fw-bold">COMSCI รุ่นที่ 10</h2>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <div class="image-text">
-                <a href="index2.html" class="btn-link">
-                <img src="https://media.readthecloud.co/wp-content/uploads/2019/06/30050357/big7-note-watchara-15.jpg">
-                <h2>COMSCI รุ่นที่ 11</h2></a>
+            <div class="col">
+                <a href="index2.html" class="btn-link text-decoration-none">
+                    <div class="card h-100">
+                        <img src="https://media.readthecloud.co/wp-content/uploads/2019/06/30050357/big7-note-watchara-15.jpg" class="card-img-top" alt="Image">
+                        <div class="card-body text-center">
+                            <h2 class="card-title fs-5 fw-bold">COMSCI รุ่นที่ 11</h2>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <div class="image-text">
-                <a href="index2.html" class="btn-link">
-                <img src="https://us-fbcloud.net/wb/data/1451/1451824-img.vwsj6k.18rx9.opsb5sjm.webp">
-                <h2>COMSCI รุ่นที่ 12</h2></a>
+            <div class="col">
+                <a href="index2.html" class="btn-link text-decoration-none">
+                    <div class="card h-100">
+                        <img src="https://www.oppie.co.th/Images/product/2x2_2021082110235802.jpg" class="card-img-top" alt="Product Image">
+                        <div class="card-body text-center">
+                            <h2 class="card-title fs-5 fw-bold">COMSCI รุ่นที่ 12</h2>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <div class="image-text">
-                <a href="index2.html" class="btn-link">
-                <img src="https://us-fbcloud.net/wb/data/1451/1451824-img.vwsj6k.gmwho.opsb5sjm.webp">
-                <h2>COMSCI รุ่นที่ 13</h2></a>
+            <div class="col">
+                <a href="index2.html" class="btn-link text-decoration-none">
+                    <div class="card h-100">
+                        <img src="https://cdn.pixabay.com/photo/2016/11/29/04/02/cat-1868761_640.jpg" class="card-img-top" alt="Cat Image">
+                        <div class="card-body text-center">
+                            <h2 class="card-title fs-5 fw-bold">COMSCI รุ่นที่ 13</h2>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <div class="image-text">
-                <a href="index2.html" class="btn-link">
-                <img src="https://us-fbcloud.net/wb/data/1451/1451824-img.vwsj6k.1nm0m.opsb5sjm.webp">
-                <h2>COMSCI รุ่นที่ 14</h2></a>
+            <div class="col">
+                <a href="index2.html" class="btn-link text-decoration-none">
+                    <div class="card h-100">
+                        <img src="https://images.pexels.com/photos/4050912/pexels-photo-4050912.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="Image">
+                        <div class="card-body text-center">
+                            <h2 class="card-title fs-5 fw-bold">COMSCI รุ่นที่ 14</h2>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <div class="image-text">
-                <a href="index2.html" class="btn-link">
-                <img src="https://img.salehere.co.th/p/1200x0/2023/12/13/oqknmhynf1cq.jpg">
-                <h2>COMSCI รุ่นที่ 15</h2></a>
+            <div class="col">
+                <a href="index2.html" class="btn-link text-decoration-none">
+                    <div class="card h-100">
+                        <img src="https://images.pexels.com/photos/5741507/pexels-photo-5741507.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top" alt="Image">
+                        <div class="card-body text-center">
+                            <h2 class="card-title fs-5 fw-bold">COMSCI รุ่นที่ 15</h2>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <div class="image-text">
-                <a href="index2.html" class="btn-link">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUYnO8kA4_jkZWbzay0Du4ghcCcrtjyUv86A&usqp=CAU">
-                <h2>COMSCI รุ่นที่ 16</h2></a>
+            <div class="col">
+                <a href="index2.html" class="btn-link text-decoration-none">
+                    <div class="card h-100">
+                        <img src="https://cdn.pixabay.com/photo/2017/08/30/01/03/cat-2696220_640.jpg" class="card-img-top" alt="Cat Image">
+                        <div class="card-body text-center">
+                            <h2 class="card-title fs-5 fw-bold">COMSCI รุ่นที่ 16</h2>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <div class="image-text">
-                <a href="index2.html" class="btn-link">
-                <img src="https://www.prachachat.net/wp-content/uploads/2023/07/MG_0704-1024x683-2.jpg">
-                <h2>COMSCI รุ่นที่ 17</h2></a>
+            <div class="col">
+                <a href="index2.html" class="btn-link text-decoration-none">
+                    <div class="card h-100">
+                        <img src="https://cdn.pixabay.com/photo/2020/04/09/08/09/cat-5016281_640.jpg" class="card-img-top" alt="Cat Image">
+                        <div class="card-body text-center">
+                            <h2 class="card-title fs-5 fw-bold">COMSCI รุ่นที่ 17</h2>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <div class="image-text">
-                <a href="index2.html" class="btn-link">
-                <img src="https://news.thaipbs.or.th/media/TSNBg3wSBdng7ijMhwUjFUBm2h3WijEbqqDDPagIHyC.jpg">
-                <h2>COMSCI รุ่นที่ 18</h2></a>
+            <div class="col">
+                <a href="index2.html" class="btn-link text-decoration-none">
+                    <div class="card h-100">
+                        <img src="https://cdn.pixabay.com/photo/2015/12/08/00/04/cat-1082110_640.jpg" class="card-img-top" alt="Cat Image">
+                        <div class="card-body text-center">
+                            <h2 class="card-title fs-5 fw-bold">COMSCI รุ่นที่ 18</h2>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <div class="image-text">
-                <a href="index2.html" class="btn-link">
-                <img src="https://news.thaipbs.or.th/media/B2lmGeNI77SNWKcakqzZV39Nq4P8HuIpVJaokLs7E9gKm0ax02AaC51gY.jpg">
-                <h2>COMSCI รุ่นที่ 19</h2></a>
+            <div class="col">
+                <a href="index2.html" class="btn-link text-decoration-none">
+                    <div class="card h-100">
+                        <img src="https://cdn.pixabay.com/photo/2016/02/16/16/14/cat-1209683_640.jpg" class="card-img-top" alt="Cat Image">
+                        <div class="card-body text-center">
+                            <h2 class="card-title fs-5 fw-bold">COMSCI รุ่นที่ 19</h2>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <div class="image-text">
-                <a href="index2.html" class="btn-link">
-                <img src="https://p16-va.lemon8cdn.com/tos-alisg-v-a3e477-sg/593bc80a6eb248eaa5e956d899687b59~tplv-tej9nj120t-origin.webp">
-                <h2>COMSCI รุ่นที่ 20</h2></a>
+            <div class="col">
+                <a href="index2.html" class="btn-link text-decoration-none">
+                    <div class="card h-100">
+                        <img src="https://cdn.pixabay.com/photo/2017/08/30/01/02/cat-2696217_640.jpg" class="card-img-top" alt="Cat Image">
+                        <div class="card-body text-center">
+                            <h2 class="card-title fs-5 fw-bold">COMSCI รุ่นที่ 20</h2>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <div class="image-text">
-                <a href="index2.html" class="btn-link">
-                <img src="https://becommon.co/wp-content/uploads/2022/01/body1.1-Pristimantis-gretathunbergae-.jpg">
-                <h2>COMSCI รุ่นที่ 21</h2></a>
+            <div class="col">
+                <a href="index2.html" class="btn-link text-decoration-none">
+                    <div class="card h-100">
+                        <img src="https://cdn.pixabay.com/photo/2018/05/29/00/48/cat-3434981_640.jpg" class="card-img-top" alt="Cat Image">
+                        <div class="card-body text-center">
+                            <h2 class="card-title fs-5 fw-bold">COMSCI รุ่นที่ 21</h2>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <div class="image-text">
-                <a href="index2.html" class="btn-link">
-                <img src="https://www.acadexthailand.com/wp-content/uploads/2020/08/6-12.jpg">
-                <h2>COMSCI รุ่นที่ 22</h2></a>
+            <div class="col">
+                <a href="index2.html" class="btn-link text-decoration-none">
+                    <div class="card h-100">
+                        <img src="https://cdn.pixabay.com/photo/2019/04/26/19/10/cat-4160143_640.jpg" class="card-img-top" alt="Cat Image">
+                        <div class="card-body text-center">
+                            <h2 class="card-title fs-5 fw-bold">COMSCI รุ่นที่ 22</h2>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <div class="image-text">
-                <a href="index2.html" class="btn-link">
-                <img src="https://production-rabbit-care-blog.imgix.net/2023/08/pet-3.jpg?auto=compress%2Cformat&crop=faces%2Ccenter&q=50">
-                <h2>COMSCI รุ่นที่ 23</h2></a>
+            <div class="col">
+                <a href="index2.html" class="btn-link text-decoration-none">
+                    <div class="card h-100">
+                        <img src="https://cdn.pixabay.com/photo/2020/03/13/21/15/cat-4920294_640.jpg" class="card-img-top" alt="Cat Image">
+                        <div class="card-body text-center">
+                            <h2 class="card-title fs-5 fw-bold">COMSCI รุ่นที่ 23</h2>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <div class="image-text">
-                <a href="index2.html" class="btn-link">
-                <img src="https://my.kapook.com/imagescontent/fb_img/807/s_101504_7320.jpg">
-                <h2>COMSCI รุ่นที่ 24</h2></a>
+            <div class="col">
+                <a href="index2.html" class="btn-link text-decoration-none">
+                    <div class="card h-100">
+                        <img src="https://cdn.pixabay.com/photo/2016/03/27/09/20/cat-1284205_640.jpg" class="card-img-top" alt="Cat Image">
+                        <div class="card-body text-center">
+                            <h2 class="card-title fs-5 fw-bold">COMSCI รุ่นที่ 24</h2>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <div class="image-text">
-                <a href="index2.html" class="btn-link">
-                <img src="https://songkhla.zoothailand.org/zoo_office/fileupload/encyclopedia_file/140.JPG">
-                <h2>COMSCI รุ่นที่ 25</h2></a>
+            <div class="col">
+                <a href="index2.html" class="btn-link text-decoration-none">
+                    <div class="card h-100">
+                        <img src="https://cdn.pixabay.com/photo/2017/09/04/06/12/cat-2700231_640.jpg" class="card-img-top" alt="Cat Image">
+                        <div class="card-body text-center">
+                            <h2 class="card-title fs-5 fw-bold">COMSCI รุ่นที่ 25</h2>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <div class="image-text">
-                <a href="index2.html" class="btn-link">
-                <img src="https://i1.wp.com/ngthai.com/app/uploads/2017/10/2-18.jpg?resize=640%2C429">
-                <h2>COMSCI รุ่นที่ 26</h2></a>
+            <div class="col">
+                <a href="index2.html" class="btn-link text-decoration-none">
+                    <div class="card h-100">
+                        <img src="https://cdn.pixabay.com/photo/2016/04/02/10/17/cat-1290167_640.jpg" class="card-img-top" alt="Cat Image">
+                        <div class="card-body text-center">
+                            <h2 class="card-title fs-5 fw-bold">COMSCI รุ่นที่ 26</h2>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <div class="image-text">
-                <a href="index2.html" class="btn-link">
-                <img src="https://www.sustainablelife.co//uploadedfiles/news/rg49ve.jpg">
-                <h2>COMSCI รุ่นที่ 27</h2></a>
+            <div class="col">
+                <a href="index2.html" class="btn-link text-decoration-none">
+                    <div class="card h-100">
+                        <img src="https://cdn.pixabay.com/photo/2016/03/05/20/02/cat-1238722_640.jpg" class="card-img-top" alt="Cat Image">
+                        <div class="card-body text-center">
+                            <h2 class="card-title fs-5 fw-bold">COMSCI รุ่นที่ 27</h2>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <div class="image-text">
-                <a href="index2.html" class="btn-link">
-                <img src="https://static.wixstatic.com/media/d6a395_03d511118cb74b918cc17d736d2580a9.jpg/v1/fill/w_701,h_526,al_c,lg_1,q_85,enc_auto/d6a395_03d511118cb74b918cc17d736d2580a9.jpg">
-                <h2>COMSCI รุ่นที่ 28</h2></a>
+            <div class="col">
+                <a href="index2.html" class="btn-link text-decoration-none">
+                    <div class="card h-100">
+                        <img src="https://cdn.pixabay.com/photo/2017/01/16/19/54/cat-1988071_640.jpg" class="card-img-top" alt="Cat Image">
+                        <div class="card-body text-center">
+                            <h2 class="card-title fs-5 fw-bold">COMSCI รุ่นที่ 28</h2>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <div class="image-text">
-                <a href="index2.html" class="btn-link">
-                <img src="https://images.ctfassets.net/hrltx12pl8hq/1D85eAdM0IhXrEYsoOt7Ut/107424ea3e7e10ab3203446dae175cf7/3_jungle_animals.webp">
-                <h2>COMSCI รุ่นที่ 29</h2></a>
+            <div class="col">
+                <a href="index2.html" class="btn-link text-decoration-none">
+                    <div class="card h-100">
+                        <img src="https://cdn.pixabay.com/photo/2017/10/23/13/10/cat-2886611_640.jpg" class="card-img-top" alt="Cat Image">
+                        <div class="card-body text-center">
+                            <h2 class="card-title fs-5 fw-bold">COMSCI รุ่นที่ 29</h2>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <div class="image-text">
-                <a href="index2.html" class="btn-link">
-                <img src="https://bomb0069.wordpress.com/wp-content/uploads/2013/10/520528.jpg">
-                <h2>COMSCI รุ่นที่ 30</h2></a>
+            <div class="col">
+                <a href="index2.html" class="btn-link text-decoration-none">
+                    <div class="card h-100">
+                        <img src="https://cdn.pixabay.com/photo/2015/11/01/19/54/cat-1010927_640.jpg" class="card-img-top" alt="Cat Image">
+                        <div class="card-body text-center">
+                            <h2 class="card-title fs-5 fw-bold">COMSCI รุ่นที่ 30</h2>
+                        </div>
+                    </div>
+                </a>
             </div>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </div>
+    <!-- เชื่อมต่อกับ Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-7FW1FWv6R8F3pZBFlxkmjBoZB4rF3vo5x4Bt/TzfwMvfZ0zUpUqJw1qeh03hh1b" crossorigin="anonymous"></script>
 </body>
 </html>
